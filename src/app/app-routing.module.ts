@@ -11,6 +11,7 @@ import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.com
 import { IndiceGenerosComponent } from './generos/indice-generos/indice-generos.component'
 import { LandingPageComponent } from './landing-page/landing-page.component'
 import { CrearPeliculaComponent } from './peliculas/crear-pelicula/crear-pelicula.component';
+import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'cines', component: IndiceCinesComponent},
   {path: 'cines/crear', component: CrearCineComponent},
   {path: 'cines/editar/:id', component: EditarCineComponent},
+  {path: 'peliculas/buscar', component: FiltroPeliculasComponent},
   {path: '**', redirectTo: ''}
 ];
 

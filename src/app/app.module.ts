@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ReactiveFormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListadoPeliculasComponent } from './peliculas/listado-peliculas/listado-peliculas.component';
@@ -19,6 +20,8 @@ import { IndiceCinesComponent } from './cines/indice-cines/indice-cines.componen
 import { EditarActorComponent } from './actores/editar-actor/editar-actor.component';
 import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.component';
 import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
+import { FormularioGeneroComponent } from './generos/formulario-genero/formulario-genero.component';
+import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +39,17 @@ import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
     IndiceCinesComponent,
     EditarActorComponent,
     EditarGeneroComponent,
-    EditarCineComponent
+    EditarCineComponent,
+    FormularioGeneroComponent,
+    FiltroPeliculasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MaterialModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
